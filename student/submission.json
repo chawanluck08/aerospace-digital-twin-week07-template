@@ -3,8 +3,6 @@
   "readiness": {
     "ready": false,
     "missing": [
-      "assumptions",
-      "model",
       "prediction",
       "verification",
       "claim",
@@ -15,7 +13,7 @@
   },
   "record": {
     "id": "b917a643-4c12-4616-9d9f-7f716e80466b",
-    "revision": "213",
+    "revision": "220",
     "model": {
       "moduleId": "controls",
       "modelId": "week07-student-model",
@@ -47,7 +45,7 @@
       "assumptions": {
         "suppliedBy": "student",
         "locked": false,
-        "text": ""
+        "text": "Assumption — Local linear effectiveness: The model assumes that the change in pitching-moment coefficient is approximately proportional to elevator deflection, over the operating range considered. This assumption could be invalid for large control deflections or nonlinear aerodynamic effects, where control effectiveness may no longer remain constant."
       },
       "inputs": {
         "suppliedBy": "instructor",
@@ -57,7 +55,7 @@
       "model": {
         "suppliedBy": "student",
         "locked": false,
-        "text": ""
+        "text": "The supplied quantities are air density, airspeed, moment of inertia, target angular acceleration, competing moment, reference area, reference chord, control effectiveness, and elevator deflection. The unknown quantities are dynamic pressure, change in pitching-moment coefficient, and control moment. Elevator deflection is converted from degrees to radians before it is used by the model."
       },
       "prediction": {
         "suppliedBy": "student",

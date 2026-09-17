@@ -8,11 +8,11 @@ Answers and recorded model results from `submission.json`. This document does no
 
 - Record ID: b917a643-4c12-4616-9d9f-7f716e80466b
 
-- Record revision: 213
+- Record revision: 220
 
 - Model hash: fnv1a-adee3cf8
 
-- Readiness: Marked incomplete or not ready; missing: assumptions, model, prediction, verification, claim, reflection, aiUse, execution
+- Readiness: Marked incomplete or not ready; missing: prediction, verification, claim, reflection, aiUse, execution
 
 ## Supplied setup (instructor supplied)
 
@@ -42,13 +42,17 @@ The downward force aft the CG push the tails down then the nose has to rotate up
 **Prompt:** Explain one supplied assumption and what could invalidate it: planar motion, fixed reference, local linear effectiveness, no trim or damping.
 
 **Student response:**
-_Missing — no response supplied._
+```
+Assumption — Local linear effectiveness: The model assumes that the change in pitching-moment coefficient is approximately proportional to elevator deflection, over the operating range considered. This assumption could be invalid for large control deflections or nonlinear aerodynamic effects, where control effectiveness may no longer remain constant.
+```
 
 ### model
 **Prompt:** Write your demand, dynamic-pressure, coefficient and moment equations. Identify which quantities are supplied and which are unknown.
 
 **Student response:**
-_Missing — no response supplied._
+```
+The supplied quantities are air density, airspeed, moment of inertia, target angular acceleration, competing moment, reference area, reference chord, control effectiveness, and elevator deflection. The unknown quantities are dynamic pressure, change in pitching-moment coefficient, and control moment. Elevator deflection is converted from degrees to radians before it is used by the model.
+```
 
 ### prediction
 **Prompt:** Before running your own implementation, predict the sign of its elevator moment and the effect of halving airspeed. Explain the competing moment.
