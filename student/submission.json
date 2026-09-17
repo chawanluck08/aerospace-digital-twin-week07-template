@@ -3,7 +3,6 @@
   "readiness": {
     "ready": false,
     "missing": [
-      "physics",
       "assumptions",
       "model",
       "prediction",
@@ -15,8 +14,8 @@
     ]
   },
   "record": {
-    "id": "91951d09-0646-4698-9f30-01319f345ce8",
-    "revision": "1",
+    "id": "b917a643-4c12-4616-9d9f-7f716e80466b",
+    "revision": "213",
     "model": {
       "moduleId": "controls",
       "modelId": "week07-student-model",
@@ -43,7 +42,7 @@
       "physics": {
         "suppliedBy": "student",
         "locked": false,
-        "text": ""
+        "text": "The downward force aft the CG push the tails down then the nose has to rotate upward. So the airplane rotates counterclockwise which is positive (nose-up) moment"
       },
       "assumptions": {
         "suppliedBy": "student",
