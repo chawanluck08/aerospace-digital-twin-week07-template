@@ -8,11 +8,11 @@ Answers and recorded model results from `submission.json`. This document does no
 
 - Record ID: b917a643-4c12-4616-9d9f-7f716e80466b
 
-- Record revision: 220
+- Record revision: 409
 
 - Model hash: fnv1a-adee3cf8
 
-- Readiness: Marked incomplete or not ready; missing: prediction, verification, claim, reflection, aiUse, execution
+- Readiness: Marked incomplete or not ready; missing: verification, claim, reflection, aiUse, execution
 
 ## Supplied setup (instructor supplied)
 
@@ -58,7 +58,9 @@ The supplied quantities are air density, airspeed, moment of inertia, target ang
 **Prompt:** Before running your own implementation, predict the sign of its elevator moment and the effect of halving airspeed. Explain the competing moment.
 
 **Student response:**
-_Missing — no response supplied._
+```
+I predict that the elevator will produce a moment in the direction required to achieve the target angular acceleration and overcome the competing moment. The competing moment is the moment that acts against the desired rotation, so the elevator must provide enough control moment to overcome it. Halving the airspeed effects the dynamic pressure to be 1/4, so then elevator moment will be 1/4 too.
+```
 
 ### verification
 **Prompt:** Show one independent hand calculation with units. Compare it with your model, and explain a sign, unit, or limiting-case check.
